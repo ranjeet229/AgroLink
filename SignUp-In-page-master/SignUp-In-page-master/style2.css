@@ -1,0 +1,167 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4; /* Default background color for the body */
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    margin-bottom: 5px;
+    font-size: 1.8rem;
+}
+
+.logo p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* Navbar */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* Hero Section with background image fixed */
+/* Hero Section with fixed background image */
+.hero {
+    background: url('https://wallpapercave.com/wp/wp11386349.jpg') no-repeat center center/cover;
+    background-attachment: fixed; /* Ensures the background is fixed and doesn't scroll */
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+    height: 100vh; /* Full-screen height for the hero section */
+    overflow: hidden;
+    z-index: 1; /* Ensure it's above other elements */
+    -webkit-backface-visibility: hidden; /* Prevent flickering in some browsers */
+    -webkit-transform: translateZ(0); /* Fix for iOS Safari */
+}
+
+
+.hero-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Button Hover Effect */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+    background-color: #4CAF50; /* Initial button color */
+}
+
+/* Common hover for all buttons */
+.button:hover {
+    background-color: #45a049; /* Darker green hover effect */
+}
+
+/* Join and Contact buttons */
+.join-button {
+    background-color: #4CAF50;
+    margin: 20px 0;
+}
+
+.contact-button {
+    background-color: #f44336;
+    margin-top: 20px;
+}
+
+.contact-button:hover {
+    background-color: #e53935; /* Darker red on hover */
+}
+
+/* Product Section */
+.product-selection {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Updated Products Section - Centered and equally spaced */
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    background-color: #4CAF50;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.product button {
+    background-color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for product buttons */
+.product button:hover {
+    background-color: #45a049;
+}
+/* Hero Section with fixed background image */

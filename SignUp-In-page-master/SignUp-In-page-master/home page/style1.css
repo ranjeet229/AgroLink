@@ -1,0 +1,98 @@
+/* General styling for body */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Video container */
+.video-container {
+    position: fixed; /* Make the video stay fixed in the background */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Place the video behind the content */
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the entire screen */
+}
+
+/* Auth Buttons Container */
+.auth-buttons-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+
+.auth-buttons-container a {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: block;
+    text-align: center;
+}
+
+/* Hover effects for buttons */
+.auth-buttons-container .login-btn {
+    background-color: #2E7D32; /* Dark Green */
+}
+
+.auth-buttons-container .login-btn:hover {
+    background-color: #1B5E20; /* Darker Green */
+}
+
+.auth-buttons-container .signup-btn {
+    background-color: #2E7D32; /* Blue */
+}
+
+.auth-buttons-container .signup-btn:hover {
+    background-color: #1B5E20; /* Darker Blue */
+}
+
+/* Content over the video */
+.content {
+    position: absolute;
+    top: 30%; /* Adjusted to move the content slightly above the middle */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center horizontally, keep it slightly above vertically */
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+}
+
+h1 span {
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for individual letters */
+h1 span:hover {
+    color: #4CAF50; /* Green color on hover */
+    transform: scale(1.2) rotate(10deg); /* Example effect: scale and rotate */
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}

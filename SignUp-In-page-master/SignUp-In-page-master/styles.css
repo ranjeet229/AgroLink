@@ -1,0 +1,81 @@
+body {
+    background-image: url('https://t3.ftcdn.net/jpg/07/83/60/18/240_F_783601892_GBU1lLPlamevFtYAWIQtYbTmdq5jykSE.jpg'); /* Background image */
+    background-size: cover; /* Ensure the image covers the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+}
+
+.signup-form {
+    background-color: rgba(255, 255, 255, 0.75); /* Semi-transparent background for the form */
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    animation: fadeIn 1.5s ease;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333; /* Darker color for better contrast on light backgrounds */
+}
+
+.form-label {
+    color: #000; /* Black color for labels */
+}
+
+.form-control {
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+    font-size: 16px;
+    color: #000; /* Black text color */
+    background-color: #fff; /* White background for input fields */
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border: 2px solid #4ca564;
+    outline: none;
+}
+
+.btn-primary {
+    background-color: #66c775;
+    border: none;
+    border-radius: 30px;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #4ca564;
+}
+
+.text-center a {
+    color: #333; /* Ensure link color contrasts well with background */
+    text-decoration: none;
+}
+
+.text-center a:hover {
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
